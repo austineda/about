@@ -13,7 +13,7 @@ let dogModels = [
         size: 'pequeno',
     },
     Chihuaha = {
-        color: 'many',
+        color: 'mny',
         personality: 'fiesty',
         size: 'muy pequeno',
     },
@@ -22,4 +22,11 @@ let dogModels = [
 
 
 
-console.log(dogModels[2])
+console.log(doodel	
+
+
+
+sasd
+
+
+s[2])
