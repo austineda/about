@@ -1,0 +1,15 @@
+.container {
+    display: inline-flex;
+    background-color: red;
+    justify-content:
+    flex-direction: column;
+}
+.container2 {
+    display: flex; 
+    justify-content: flex-end;
+    background-color: blue;
+}
+.container3 {
+    display: flex;
+    justify-content: flex flex-start;
+}

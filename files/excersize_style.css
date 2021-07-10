@@ -1,0 +1,37 @@
+.body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 150vh;
+}
+.parent {
+    background-color: lightskyblue;
+    padding: 20px;
+    position: fixed;
+    
+}
+
+.child1 {
+    background-color: brown;
+    padding: 20px;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+
+
+    max-width: 80%;
+}
+
+.child2 {
+    background-color: crimson;
+    padding: 20px;
+    position: relative;
+    max-width: 80%;
+}
+
+
+.child3 {
+    background-color: darkgoldenrod;
+    padding: 20px;
+    position: relative;
+
+    max-width: 80%;
+}
