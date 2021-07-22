@@ -23,14 +23,23 @@ const books = [
     rating: 4,
     year: 2008},
 
-    {isbn: '978-0-7334-2609-4',
+    {isbn: 9780733426094,
     title: 'Don Quixote',
     author: 'Miguel de Cervantes',
     rating: 5,
     year: 1605},
 
-    {isbn: '978-0-7334-2609-4',
+    {isbn: 9780733426094,
     title: 'Don Quixote',
     author: 'Miguel de Cervantes',
     rating: 5,
     year: 1605}
+
+
+const findDuplicates = arr => {
+    Duplicates = [];
+    for (let i = 0; i < books.length; i++) {
+     if (books [i] === books[0])
+    }
+    return
+}

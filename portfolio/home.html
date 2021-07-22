@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Castaneda - Full Stack Engineer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel=" shortcut icon" type="image/jpg" href="./images/favico.png">
+    <style>
+        .body {
+            position: relative;
+        }
+        .navbar-custom {
+            background-color: #173248;
+            width:100%;max-width:none;padding:0;
+        }
+        .bodybgcolor {
+            background: #f3f2ef !important;;
+        }
+        .alt-grid [class*="col-"] {
+            padding-left:0;padding-right:0
+        }
+        .alt-grid .row {
+            margin-left:0;margin-right:0}
+        .alt-grid .container {
+            width:100%;max-width:none;padding:0;
+        }
+        .myclass {
+            background: #ffffff;
+        }
+        .image-container{
+            position: relative;
+            display: inline-block; 
+        }
+        .headshot_position {
+           
+            align-items: start;
+            flex-direction: column;
+            width: 152px;
+            
+        }
+        .headshot {
+            
+            position: relative;
+            margin-top: -75px;
+            margin-left: 25px;
+            display: block;
+            background-repeat: no-repeat;
+            height: 100%;
+            border-radius: 50%;
+            z-index: 4;
+            border: 6px solid #ffffff;
+            transform: rotate(5deg);
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.15),0px 0px 2px rgba(0,0,0,0.15);
+            position: relative;
+
+            
+        }
+        .no-padding {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .side-crop {
+             max-width: 375px; 
+             overflow: hidden; }
+        .side-crop img { 
+            max-width: initial;
+        }
+        .round-corners {
+            border-radius: 7px;
+        }
+        .shadowContainer {
+            box-shadow: 0px 0px 1px rgba(0,0,0,0.15),0px 0px 1px rgba(0,0,0,0.15);
+        }
+        .mynavbar{
+            display: flex;
+            flex-wrap: nowrap;
+            border-color: #ffffff;
+
+        }
+        .mynavbar .search {
+            background-color: #eef3f8;
+            height: 34px;
+        }
+        .containerMargin {
+            margin-left: 1%;
+            margin-right: 1%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .link{
+            font-weight: 600;
+            line-height: 1.5;
+            font-size: 13px;
+        }
+        a:link { text-decoration: none; }
+
+        a:visited { text-decoration: none; }
+
+        a:hover { text-decoration: none; }
+
+        a:active { text-decoration: none; }
+        
+        .col .containerHeader {
+            font-size: 19px; 
+            line-height: 1.4;
+            font-weight: 400;
+        }
+        .col {
+            font-size: 13px;
+            font-weight: 400;
+        }
+        @media (max-width: 576px) {
+            .mainContainerMargin {
+                margin-left: 8%;
+                margin-right: 8%;
+                padding-top: 8px;
+             }
+             .leftMargin {
+                 margin-left: 10vw;
+             }
+        }
+        @media (min-width: 576px) {
+            .mainContainerMargin {
+                margin-left: 8%;
+                margin-right: 8%;
+                padding-top: 7px;
+             }
+             .leftMargin {
+                 margin-left: 13vw;
+             }
+        }
+
+        @media (min-width: 768px) {
+            .mainContainerMargin {
+                margin-left: 18vw;
+                margin-right: 18vw;
+                padding-top: 8px;
+             }
+             .leftMargin {
+                 margin-left: 20vw;
+             }
+        }
+        @media (min-width: 992px) { 
+            .mainContainerMargin {
+                margin-left: 22vw;
+                margin-right: 22vw;
+                padding-top: 8px;
+             }
+             .leftMargin {
+                 margin-left: 20vw;
+             }
+        }
+        @media (min-width: 1200px) { 
+            .mainContainerMargin {
+                margin-left: 25vw;
+                margin-right: 25vw;
+                padding-top: 8px;
+             }
+             .leftMargin {
+                 margin-left: 20vw;
+             }
+        }
+       
+        
+        
+        
+        .noTopPadding {
+            padding-top: 0 !important;
+        }
+        .h2{
+            font-size: 22px;
+            line-height: 1.4;
+            font-weight: 350;
+        }
+        .experienceEntry{
+            padding-top: 13px;
+        }
+        .experienceIcon {
+            width:56px;
+        }
+        
+        .ul{
+            list-style-type: none;
+        }
+        .ul{
+            list-style-type: none;
+        }
+        .experienceIconCol{
+            width: 56px;
+            padding-right: 55px;
+
+        }
+        .experienceEntryText {
+            font-family: inherit;
+            font-size: 14px;
+            line-height: 1.42;
+
+        }
+        .experienceEntryText .title {
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 550;
+        }
+        .experienceEntry .date {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #666666;
+        }
+    </style>
+
+
+</head>
+
+
+<body class="bodybgcolor" >
+    <!--NavBar-->
+<div class="container-fluid no-padding mynavbar sticky-top shadowContainer myclass" style="background-color: white;">
+    <nav class="navbar navbar-expand-lg navbar-light leftMargin" style="background-color: white; ">
+        <div class="container" id="navCont">
+            <div class="flex-row " style="display: inline-flex;"> 
+                <div class="col"></div>
+                    <div class="col">           
+                        <a class="navbar-brand" href="#">
+                            <img style="border-radius: 2.5px;" src="./images/AtlasLogoBlue.png" height="34px"/>
+                        </a>
+                    </div>
+               
+                
+                <div class="col">
+                    <input class="form control search me-2 rounded-2 border-0" type="search" placeholder="  Search" aria-label="Search">                 
+                </div>
+                <div class="col">
+                    <!--Empty-->
+                </div>
+            </div>
+        </div> 
+        </nav>       
+</div>    
+ 
+
+<!--div container for entire page-->
+<div class="d-grid gap-3">
+    <div class="p-1 border-0">
+        <div class="container no-padding myclass alt-grid w-auto round-corners shadowContainer mainContainerMargin noTopPadding" >
+            <div class="container px-0 myclass round-corners">
+                <div class="row align-self-center">
+                    <div class="col no-padding">
+                        <img class="w-100 rounded-top"  src="./images/bgxslim.jpg">
+                    <div class="headshot_position">
+                        <img class="headshot img-fluid borsder-white border-3" src="./images/headshot.png">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+        <div class="container align-self-md-baseline no-padding alt-grid w-auto ">
+                    <div class="container containerMargin">
+                        <div class="row">
+                            <div class="col  center-block" style="font-size: 23px; font-weight: 600;">
+                                Austin Castaneda
+                            </div>
+                        
+                        <div class="col" >
+                        <img width=30px src="./images/AtlasLogoBlue.png"><span style="font-size: 13px; font-weight: 600; padding-left:5px; line-height: 2rem;">Atlas Agile</span>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col fs-6 center-block" >
+                                Full-Stack Software Developer
+                            </div>
+                        
+                        <div class="col">
+                            <img width=30px src="./images/uwlogo.jpg"><span style="font-size: 13px; font-weight: 600; padding-left:5px; line-height: 2rem;">University of Washington</span>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col" style="font-size: 13px; color: #707070">
+                                United States - <a class="link" href="#">Contact info</a>
+                            </div>
+                        
+                            <div class="col">
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a class="link" href="#">500+ Connections</a>
+                            </div>
+                            
+                            <div class="col">
+                                <!--Empty 1-->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <!--Empty 1-->
+                            </div>
+                            <div class="col">
+                            <!--Empty 2--> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                            <br>  <!--Empty 1-->  
+                            </div>
+                            
+                            <div class="col">
+                                <!--Empty 2-->
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        <!--About Section-->
+<div class=" round-corners mainContainerMargin border-0">
+        <div class="container align-self-md-baseline myclass round-corners shadowContainer">
+            <div class="container containerMargin">    
+                    <div class="row" >
+                        <div class="col h2 center-block">
+                            About 
+                        </div>
+                        <div class="col">
+                            <!--Empty-->
+                        </div>
+                        <div class="col">
+                            <!--Empty-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col experienceEntryText center-block" >
+                            <!--Empty-->Aspiring Software Developer!
+                        </div>
+                     
+                        
+                    </div>
+                </div>
+            
+        </div>
+    
+</div>
+
+<!--Experience Section-->
+<div class="mainContainerMargin round-corners border-0 ">
+    <div class="container align-self-md-baseline myclass round-corners shadowContainer">
+        <div class="container containerMargin">
+            <div class="row" >
+                <div class="col center-block h2">
+                    Experience
+                </div>
+                <div class="col">
+                    
+                </div>
+                
+            </div>
+            
+            <ul class="experience-Class" style="list-style: none; margin:0; padding:0;padding-bottom: ;" id="entry">
+                <li>
+                    <div class="row experienceEntry align-items-start">
+                        <div class="experienceIconCol" >
+                            <img  class="experienceIcon" src="./images/AtlasLogoBlue.png"> 
+                        </div>
+                        <div class="col experienceEntryText">
+                            <span class="title">Consultant</span>
+                            <br>
+                            <span>Atlas Agile</span>
+                            <br>
+                            <Span class="date">Mar 2020 - Present・1 yr 5 mos</Span>
+                            <br>
+                            <span><p>
+                                Providing consulting expertise, specializing in SaaS deployments focusing on the following areas<br>- Project Management<br>- User Admin Support<br>- Custom Training Programs and Materials<br>- Implementation Support<br>- System Optimization<br>- Reporting &amp; Analytics<br>- Data Migration<br>- Talent Acquisition Strategy<br>- Certified iCIMS Advisor</p></span>
+                                <hr class="">
+                        </div>
+                        
+                    </div>
+                </li> 
+                <li>
+                    <div class="row experienceEntry align-items-start">
+                        <div class="experienceIconCol" >
+                            <img  class="experienceIcon" src="./images/icims.jpg"> 
+                        </div>
+                        <div class="col experienceEntryText">
+                            <span class="title">Implementation Manager</span>
+                            <br>
+                            <span>iCIMS</span>
+                            <br>
+                            <Span class="date">Jun 2016 - Mar 2020・3 yr 10 mos</Span>
+                            <br>
+                            <span><p>
+                                ■ Implement and Support SaaS talent and on-boarding management systems for large and enterprise (7000+ employees) client bases with worldwide presences <br><br>■ Construct creative solutions for product gaps and customer requirements to ensure the best possible implementation experience<br><br>■ Develop and cultivate strong customer relationships consisting of teams of senior managers up to VP-Level individuals<br><br>■ Design thorough project plans, detailing project milestones, and managing third-party API integrations with the iCIMS platform <br><br>■ Comprehensive management of intricate software implementations including analysis, training, and upselling additional products</p></span>
+                                <hr class="">
+                        </div>
+                        
+                    </div>
+                </li> 
+                <li>
+                    <div class="row experienceEntry align-items-start">
+                        <div class="experienceIconCol" >
+                            <img  class="experienceIcon" src="./images/rosetta.jpg"> 
+                        </div>
+                        <div class="col experienceEntryText">
+                            <span class="title">Product Manager</span>
+                            <br>
+                            <span>Rosetta Stone</span>
+                            <br>
+                            <Span class="date">May 2013 - Apr 2016・3 yr</Span>
+                            <br>
+                            <span><p>
+                                Product Owner of Web application development team in an Agile Scrum environment<br><br>■ Overall responsibility providing intermediary support and development planning between major stakeholders and engineering teams.<br><br>■ Grew world-wide trial-to-active B2B customers by to over 200 major enterprise clients in the first year of launching.<br><br>■ Launched the business’s first customized SaaS deal for Saudi Electronic University for a projected 5 million global users.<br><br>■ Conceptualize and write requirements for improvements and integrations between our content management and front end user facing systems.<br><br>■ Plan and lead a 10-person team through recurring 2 week development sprints to successfully execute on multiple, dynamically changing priorities.
+  </p></span>
+                                <hr class="">
+                        </div>
+                        
+                    </div>
+                </li>
+                <div class="row" >
+                    <div class="col center-block h2">
+                        Education
+                    </div>
+                    <div class="col">
+                        
+                    </div>
+                    
+                </div>
+                <li>
+                    <div class="row experienceEntry align-items-start">
+                        <div class="experienceIconCol" >
+                            <img  class="experienceIcon" src="./images/uw.jpg"> 
+                        </div>
+                        <div class="col experienceEntryText">
+                            <span class="title">University of Washington</span>
+                            
+                           
+                            <br>
+                            <Span class="date">2007-2011</Span>
+                            <br>
+                           <br>
+                                <hr class="">
+                        </div>
+                        
+                    </div>
+                </li>      
+            </ul>
+            
+                
+            </div>
+        </div>    
+    </div>
+
+</div>    
+</div> <!--For initial div grid-->
+<!--Code goes above here-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+</script>    
+</body>
+</html>

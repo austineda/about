@@ -1,0 +1,50 @@
+.columnMain {
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    margin: 1vh;
+    flex-direction: column;
+    
+}
+
+.column1 {
+    padding: 10px;
+    display: flex;
+    
+}
+
+.column2 {
+    padding:10px;
+}
+
+.h1 { 
+    font-size: 100px;
+    justify-content:left;
+    margin: 10%;
+
+}
+
+.h2 {
+    font-size: .75vh;
+
+}
+
+.row1 {
+    background-color: royalblue;
+}
+.row2 {
+    background-color: seagreen;
+}
+.row3 {
+    background-color: slateblue;
+}
+
+#headshot {
+   clip-path: circle(80px at center);
+    width: 160px;
+
+}
+
+.customBGcolor{
+    background-color: #173248;
+}

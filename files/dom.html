@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D</title>
+    <script>
+        function changeH3(){
+            document.getElementById("h3_text").innerHTML = "Changed Text";
+        }
+        function changePfont(){
+            document.getElementsByTagName("p")[0].style.fontSize = "15px";
+        }
+        function changePbg(){
+            document.getElementById("p1").style.backgroundColor = "red";
+        }
+        </script>
+</head>
+<body>
+    <h1>h1 Header Text</h1>
+    <h2>h2 Header Text</h2>
+    <h3 id="h3_text">Unchaged Text</h3>
+    <input type="button" value="change H3 Text" onclick="changeH3()">
+    <br>
+    <input type="button" value="Change p font Size" onclick="changePfont()"><br>
+    <input type="button" value="Change p1 background color" onclick="changePbg()"><br>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestias quia unde illo culpa itaque ad nisi pariatur reprehenderit. Dolorum, distinctio! Nobis recusandae provident error, dolor quas perspiciatis culpa vel facere minima eligendi dolorum dolorem amet totam quia illum quod iusto, sit ea numquam pariatur voluptatum. Ipsum, at quo. Quod exercitationem ipsum ut veniam optio dolor recusandae quibusdam, voluptatum obcaecati ipsa commodi fuga, nam, similique quo nostrum! Asperiores ab fugiat ducimus ratione dolorem dicta exercitationem suscipit in consectetur dolores molestiae accusantium doloribus molestias eum impedit, fuga commodi temporibus fugit culpa? Minus maiores quaerat tenetur totam nobis cumque optio expedita ratione!</p>
+    <br>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit aspernatur possimus recusandae debitis et mollitia ex dolor facere modi doloribus perspiciatis voluptate, eaque similique ad magni voluptatum numquam. Totam, officiis excepturi. Culpa voluptatibus ducimus voluptatum, voluptas officiis alias esse mollitia labore, commodi, dicta facilis! Obcaecati harum ut odio asperiores quae deleniti esse voluptatem tempore tempora et error id maxime fugiat iure, eaque tenetur dolorum incidunt expedita facere nam officiis. Voluptate quisquam voluptatum labore harum quae, autem quidem incidunt minus sapiente obcaecati beatae mollitia? Nemo doloremque, aliquam quis velit placeat assumenda neque quae consectetur earum, sint quas, mollitia doloribus delectus animi.</p>
+    
+
+</body>
+</html>
+
+<!--Creat Two Paragraphs
+    Change text of h3
+    Change font size of paragragh
+    change background color of first paragraph

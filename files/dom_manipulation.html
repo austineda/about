@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function manipulateDom(){
+            const newDiv = document.createElement("div");
+            const content = document.createTextNode("Dom is Awesome");
+            newDiv.appendChild(content);
+            const currentDiv = document.getElementById("mainDiv")
+            document.body.insertBefore(newDiv,currentDiv);
+        }
+        function addEvent(){
+            document.getElementById("somebutton").onclick = function(){
+                alert("I didn't exist before");
+
+            }
+        }
+    </script>
+</head>
+<body onload="addEvent()">
+    <div id="mainDiv">
+        Default text here
+    </div><br>
+    <input type = button value="Change" onclick="manipulateDom()"/>
+    <input type = button value="Show Alert" id="somebutton" />
+</body>
+</html>
